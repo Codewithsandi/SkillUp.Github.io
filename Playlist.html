@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillUp</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: rgba(0, 0, 0, 0.719);
+        }
+        
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            margin: 20px;
+            top: 0px;
+        }
+        
+        .left img {
+            height: 63px;
+            width: 100px;
+            filter: invert(100%);
+        }
+        
+        .right {
+            /* border: 2px solid cyan; */
+            width: 33%;
+            position: absolute;
+            right: 0px;
+            margin: 20px;
+            top: 0px;
+        }
+        
+        .navbar {
+            display: inline-block;
+        }
+        
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+        
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 17px;
+        }
+        
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: gray;
+            text-decoration: underline;
+        }
+        
+        #service {
+            display: flex;
+            margin: 110px 20px;
+        }
+        
+        #service .box {
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 2px 55px;
+            border-radius: 28px;
+            margin-bottom: 20px;
+            background: burlywood;
+            text-align: center;
+        }
+        
+        #service .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+        
+        .btn {
+            background: black;
+            color: white;
+            border: 2px solid white;
+            padding: 8px;
+            width: 40%;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: rgb(228, 177, 111);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="IMG/logo.png" alt="">
+        </div>
+        <div class="right">
+            <ul class="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="Playlist.html" class="active">Playlist</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="service-container">
+
+        <div id="service">
+            <div class="box">
+                <img src="IMG/Algorithm.png" alt="">
+                <h2 class="h">Algorithm</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+            <div class="box">
+                <img src="IMG/Android.png" alt="">
+                <h2 class="h">Android</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+            <div class="box">
+                <img src="IMG/pythons.png" alt="">
+                <h2 class="h">python</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="service-container">
+
+        <div id="service">
+            <div class="box">
+                <img src="IMG/c_r8wWuCn.png" alt="">
+                <h2 class="h">C</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+            <div class="box">
+                <img src="IMG/cpp.png" alt="">
+                <h2 class="h">C++</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+            <div class="box">
+                <img src="IMG/download.png" alt="">
+                <h2 class="h">C#</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="service-container">
+
+        <div id="service">
+            <div class="box">
+                <img src="IMG/HTML.png" alt="">
+                <h2 class="h">HTML</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+            <div class="box">
+                <img src="IMG/CSS.png" alt="">
+                <h2 class="h">CSS</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+            <div class="box">
+                <img src="IMG/JS.png" alt="">
+                <h2 class="h">JS</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="service-container">
+
+        <div id="service">
+            <div class="box">
+                <img src="IMG/Flask.png" alt="">
+                <h2 class="h">Flask</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+            <div class="box">
+                <img src="IMG/django.png" alt="">
+                <h2 class="h">django</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+            <div class="box">
+                <img src="IMG/java.png" alt="">
+                <h2 class="h">java</h2>
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet. ipsum dolor sit amet consec adipisicing elit.</p>
+                <button class="btn">Register</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

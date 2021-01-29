@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillUp</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 500px;
+            color: white;
+            /* background: rgba(37, 37, 37, 0.6); */
+            background: url('IMG/3.jpg')no-repeat center center/cover;
+        }
+        
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            margin: 20px;
+            top: 0px;
+        }
+        
+        .left img {
+            height: 63px;
+            width: 100px;
+            filter: invert(100%);
+        }
+        
+        .right {
+            /* border: 2px solid cyan; */
+            width: 33%;
+            position: absolute;
+            right: 0px;
+            margin: 20px;
+            top: 0px;
+        }
+        
+        .navbar {
+            display: inline-block;
+        }
+        
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+        
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 17px;
+        }
+        
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: gray;
+            text-decoration: underline;
+        }
+        
+        .container {
+            /* border: 2px solid red; */
+            margin: 115px 110px;
+            padding: 8px 32px;
+            width: 80%;
+            text-align: center;
+        }
+        
+        .container h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        
+        .form-group input {
+            text-align: center;
+            margin: 5px auto;
+            padding: 5px;
+            width: 260px;
+            font-size: 15px;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            margin-bottom: 16px;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+        }
+        
+        .form-group textarea {
+            text-align: center;
+            margin: 5px auto;
+            display: block;
+            padding: 5px;
+            width: 540px;
+            font-size: 15px;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            margin-bottom: 16px;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+        }
+        
+        .form-group ::placeholder {
+            color: white;
+        }
+        
+        .btn {
+            display: block;
+            width: 552px;
+            margin: 10px auto;
+            padding: 9px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn:hover {
+            background: rgb(109, 109, 109);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="IMG/logo.png" alt="">
+        </div>
+        <div class="right">
+            <ul class="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="Playlist.html">Playlist</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Get in touch with Us</h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="name" name="name" placeholder="Enter your name">
+                <input type="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input type="number" name="name" placeholder="Enter your number">
+                <input type="number" name="email" placeholder="Enter your number[opctional]">
+            </div>
+            <div class="form-group">
+                <textarea name="Message" rows="4" placeholder="Enter Your Message"></textarea>
+            </div>
+        </form>
+        <button class="btn">
+            Get in touch
+        </button>
+    </div>
+</body>
+
+</html>
